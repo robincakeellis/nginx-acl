@@ -40,7 +40,7 @@ Deny AS135377 (UCLOUD).
 nginx-acl-map.sh 1 135377 > /etc/nginx/snippets/ucloud.conf
 ```
 
-## Usage in nginx configuration
+## Map usage in nginx configuration
 
 ### Example nginx.conf
 
