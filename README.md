@@ -14,7 +14,7 @@ git clone https://github.com/robincakeellis/nginx-acl.git
 
 * jq
 * curl
-* xargs (for non map script)
+* xargs
 
 ## Creating non map rules including IPv6
 
