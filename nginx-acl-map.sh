@@ -19,4 +19,5 @@ curl -sS --fail "https://stat.ripe.net/data/as-overview/data.json?resource=AS{$a
     
 curl -sS --fail "https://stat.ripe.net/data/announced-prefixes/data.json?resource=AS${asn}&sourceapp=nginx-acl-map" \
   | jq -r '.data.prefixes[] | select(.prefix | contains(":") | not) | "\(.prefix)"' \
-  | xargs -I% echo "% ${rule};"
+  | xargs -I% echo "% ${rule};" \
+  | sort
